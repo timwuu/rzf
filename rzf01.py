@@ -44,7 +44,7 @@ def calcZetaDiff( s, p, q, n):
 
     return xi
 
-n = 10000001
+n = 100001
 
 sigma = 0.5
 
@@ -59,8 +59,6 @@ t = 37.586178
 
 s = complex( sigma, t)
 
-i=1
-
 #zeta = calcZeta(s, 2, n) 
 #print( zeta)
 
@@ -70,5 +68,11 @@ i=1
 #zeta = calcZeta(s, 7, n) 
 #print( zeta)
 
-zetaDiff = calcZetaDiff( s, 23, 37, n)
-print( zetaDiff)
+t = 13.1
+
+while t < 50.1:
+    s = complex( sigma, t)
+    zetaDiff = calcZetaDiff( s, 13, 23, n)
+    if abs(zetaDiff) < 0.05:
+        print( "{0:.2f}    {1:.5f}".format( t, zetaDiff))
+    t += 0.01
