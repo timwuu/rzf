@@ -1,5 +1,7 @@
 # https://mathworld.wolfram.com/RiemannZetaFunction.html
 # https://mathworld.wolfram.com/RiemannZetaFunctionZeros.html
+#
+# http://www.dtc.umn.edu/~odlyzko/zeta_tables/index.html
 
 import cmath
 
