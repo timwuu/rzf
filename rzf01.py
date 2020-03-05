@@ -29,13 +29,10 @@ def calcZetaDiff( s, p, q, n):
     i=1
     xi = 0.0
 
-    p_1=p-1
-    q_1=q-1
-
     while i < n:
         if i%p==0:
             if i%q==0:
-                xi += (q_1-p_1)*i**(-s)
+                xi += (q-p)*i**(-s)
             else:
                 xi -= p*i**(-s)
         else:
